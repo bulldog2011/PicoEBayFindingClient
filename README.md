@@ -15,7 +15,7 @@ With this proxy and the generic Pico runtime library, eBay Finding API invocatio
 
 ``` objective-c
 
-// start progress activity
+        // start progress activity
         [self.view makeToastActivity];
         
         // Get shared service client
