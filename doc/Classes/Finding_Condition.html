@@ -1,0 +1,640 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Finding_Condition Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PicoEBayFindingClient </a></h1>
+				<a id="developerHome" href="../index.html">leansoft</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Finding_Condition Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/any">&nbsp;&nbsp;&nbsp;&nbsp;any</option>
+	
+	<option value="//api/name/conditionDisplayName">&nbsp;&nbsp;&nbsp;&nbsp;conditionDisplayName</option>
+	
+	<option value="//api/name/conditionId">&nbsp;&nbsp;&nbsp;&nbsp;conditionId</option>
+	
+	<option value="//api/name/delimiter">&nbsp;&nbsp;&nbsp;&nbsp;delimiter</option>
+	
+	
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/any">any</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/conditionDisplayName">conditionDisplayName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/conditionId">conditionId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delimiter">delimiter</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Finding_Condition Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Finding_Condition Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">PicoBindable</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Finding_Condition.h<br />Finding_Condition.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Information that describes an item&rsquo;s condition.</p>
+
+<p>@ingroup FindingServicePortType</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/conditionId">&nbsp;&nbsp;conditionId</a></code>
+		<span class="tooltip"><p>The numeric ID (e.g., 1000) for the item condition.<br><br/>
+<br><br/>
+In item results, this is only returned when the seller listed the<br/>
+item with a condition ID.<br/>
+Some categories don&rsquo;t support or require condition IDs<br/>
+(e.g., most Antiques categories don&rsquo;t). Also, until spring 2011,<br/>
+some GTC listings may define the item condition in item specifics<br/>
+instead, so no ID is returned.<br><br/>
+<br><br/>
+If you specify Condition in itemFilter, the response returns items<br/>
+with the correctly matching condition(s), even if conditionId is<br/>
+not returned. For example, if you specify a value of &ldquo;New"<br/>
+or "1000&rdquo; in the item filter, the response only returns new items.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/conditionDisplayName">&nbsp;&nbsp;conditionDisplayName</a></code>
+		<span class="tooltip"><p>The human-readable label for the item condition.<br/>
+Display names are localized for the site on which they&rsquo;re listed<br/>
+(not necessarily the site on which they&rsquo;re viewed).<br><br/>
+<br><br/>
+In item results, this is only returned when the seller specified the item&rsquo;s condition<br/>
+using a structured format eBay recognizes (e.g., <a href="#//api/name/conditionId">conditionId</a> or an<br/>
+older item specifics format).<br><br/>
+<br><br/>
+<b>When <a href="#//api/name/conditionId">conditionId</a> is also present:</b><br/>
+Most categories use the same display name for the same<br/>
+condition ID. Some categories may override the display name based<br/>
+on buyer expectations for items in the category.<br/>
+For example, condition ID 1000 could be called &ldquo;New"<br/>
+in one category and "New with tags&rdquo; in another.<br/>
+If an item is listed in two categories, the primary category<br/>
+controls the display name.<br><br/>
+<br><br/>
+Behind the scenes, eBay&rsquo;s search engine uses the ID (not the<br/>
+display name) to determine whether items are new, used, or<br/>
+refurbished. So, if you need to normalize the conditions<br/>
+across categories (such as to group items by condition),<br/>
+it may be easier to use the ID and then show the varying<br/>
+display names for reference.<br><br/>
+<br><br/>
+<b>In condition histograms:</b> If you search against<br/>
+a specific category and some items match based on their<br/>
+secondary category, the histogram only shows the display name<br/>
+if the secondary category supports the condition.<br/>
+(Condition IDs and names are dependent on the primary category.)<br/>
+However, the histogram shows the condition ID and item counts.<br/>
+This should only occur in a very small percent of results.<br/>
+Histograms may support display names in these cases later in 2011.<br/>
+As a workaround, you can fill in the missing name based on the<br/>
+&ldquo;Item Condition IDs and Names&rdquo; (link below) or based on<br/>
+the condition from an applicable item in the results.<br><br/>
+<br><br/>
+For example, suppose a seller lists a concert T-shirt in a<br/>
+clothing category with the condition &ldquo;New without tags&rdquo; (1500),<br/>
+and also in a music accessories secondary category (where<br/>
+&ldquo;New without tags&rdquo; isn&rsquo;t a recognized condition).<br/>
+If you specify the music accessories category in your request,<br/>
+the condition ID (1500) is shown in the histogram, but not the<br/>
+display name. However, the display name is shown within the items.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delimiter">&nbsp;&nbsp;delimiter</a></code>
+		<span class="tooltip"><p>(public property)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/any">&nbsp;&nbsp;any</a></code>
+		<span class="tooltip"><p>(public property)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/any" title="any"></a>
+	<h3 class="subsubtitle method-title">any</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(public property)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *any</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>(public property)</p>
+
+<p>entry type : PicoAnyElement, wrapper for primitive anyelement</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_Condition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/conditionDisplayName" title="conditionDisplayName"></a>
+	<h3 class="subsubtitle method-title">conditionDisplayName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The human-readable label for the item condition.<br/>
+Display names are localized for the site on which they&rsquo;re listed<br/>
+(not necessarily the site on which they&rsquo;re viewed).<br><br/>
+<br><br/>
+In item results, this is only returned when the seller specified the item&rsquo;s condition<br/>
+using a structured format eBay recognizes (e.g., <a href="#//api/name/conditionId">conditionId</a> or an<br/>
+older item specifics format).<br><br/>
+<br><br/>
+<b>When <a href="#//api/name/conditionId">conditionId</a> is also present:</b><br/>
+Most categories use the same display name for the same<br/>
+condition ID. Some categories may override the display name based<br/>
+on buyer expectations for items in the category.<br/>
+For example, condition ID 1000 could be called &ldquo;New"<br/>
+in one category and "New with tags&rdquo; in another.<br/>
+If an item is listed in two categories, the primary category<br/>
+controls the display name.<br><br/>
+<br><br/>
+Behind the scenes, eBay&rsquo;s search engine uses the ID (not the<br/>
+display name) to determine whether items are new, used, or<br/>
+refurbished. So, if you need to normalize the conditions<br/>
+across categories (such as to group items by condition),<br/>
+it may be easier to use the ID and then show the varying<br/>
+display names for reference.<br><br/>
+<br><br/>
+<b>In condition histograms:</b> If you search against<br/>
+a specific category and some items match based on their<br/>
+secondary category, the histogram only shows the display name<br/>
+if the secondary category supports the condition.<br/>
+(Condition IDs and names are dependent on the primary category.)<br/>
+However, the histogram shows the condition ID and item counts.<br/>
+This should only occur in a very small percent of results.<br/>
+Histograms may support display names in these cases later in 2011.<br/>
+As a workaround, you can fill in the missing name based on the<br/>
+&ldquo;Item Condition IDs and Names&rdquo; (link below) or based on<br/>
+the condition from an applicable item in the results.<br><br/>
+<br><br/>
+For example, suppose a seller lists a concert T-shirt in a<br/>
+clothing category with the condition &ldquo;New without tags&rdquo; (1500),<br/>
+and also in a music accessories secondary category (where<br/>
+&ldquo;New without tags&rdquo; isn&rsquo;t a recognized condition).<br/>
+If you specify the music accessories category in your request,<br/>
+the condition ID (1500) is shown in the histogram, but not the<br/>
+display name. However, the display name is shown within the items.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *conditionDisplayName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The human-readable label for the item condition.<br/>
+Display names are localized for the site on which they&rsquo;re listed<br/>
+(not necessarily the site on which they&rsquo;re viewed).<br><br/>
+<br><br/>
+In item results, this is only returned when the seller specified the item&rsquo;s condition<br/>
+using a structured format eBay recognizes (e.g., <a href="#//api/name/conditionId">conditionId</a> or an<br/>
+older item specifics format).<br><br/>
+<br><br/>
+<b>When <a href="#//api/name/conditionId">conditionId</a> is also present:</b><br/>
+Most categories use the same display name for the same<br/>
+condition ID. Some categories may override the display name based<br/>
+on buyer expectations for items in the category.<br/>
+For example, condition ID 1000 could be called &ldquo;New"<br/>
+in one category and "New with tags&rdquo; in another.<br/>
+If an item is listed in two categories, the primary category<br/>
+controls the display name.<br><br/>
+<br><br/>
+Behind the scenes, eBay&rsquo;s search engine uses the ID (not the<br/>
+display name) to determine whether items are new, used, or<br/>
+refurbished. So, if you need to normalize the conditions<br/>
+across categories (such as to group items by condition),<br/>
+it may be easier to use the ID and then show the varying<br/>
+display names for reference.<br><br/>
+<br><br/>
+<b>In condition histograms:</b> If you search against<br/>
+a specific category and some items match based on their<br/>
+secondary category, the histogram only shows the display name<br/>
+if the secondary category supports the condition.<br/>
+(Condition IDs and names are dependent on the primary category.)<br/>
+However, the histogram shows the condition ID and item counts.<br/>
+This should only occur in a very small percent of results.<br/>
+Histograms may support display names in these cases later in 2011.<br/>
+As a workaround, you can fill in the missing name based on the<br/>
+&ldquo;Item Condition IDs and Names&rdquo; (link below) or based on<br/>
+the condition from an applicable item in the results.<br><br/>
+<br><br/>
+For example, suppose a seller lists a concert T-shirt in a<br/>
+clothing category with the condition &ldquo;New without tags&rdquo; (1500),<br/>
+and also in a music accessories secondary category (where<br/>
+&ldquo;New without tags&rdquo; isn&rsquo;t a recognized condition).<br/>
+If you specify the music accessories category in your request,<br/>
+the condition ID (1500) is shown in the histogram, but not the<br/>
+display name. However, the display name is shown within the items.</p>
+
+<p>type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_Condition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/conditionId" title="conditionId"></a>
+	<h3 class="subsubtitle method-title">conditionId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The numeric ID (e.g., 1000) for the item condition.<br><br/>
+<br><br/>
+In item results, this is only returned when the seller listed the<br/>
+item with a condition ID.<br/>
+Some categories don&rsquo;t support or require condition IDs<br/>
+(e.g., most Antiques categories don&rsquo;t). Also, until spring 2011,<br/>
+some GTC listings may define the item condition in item specifics<br/>
+instead, so no ID is returned.<br><br/>
+<br><br/>
+If you specify Condition in itemFilter, the response returns items<br/>
+with the correctly matching condition(s), even if conditionId is<br/>
+not returned. For example, if you specify a value of &ldquo;New"<br/>
+or "1000&rdquo; in the item filter, the response only returns new items.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *conditionId</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The numeric ID (e.g., 1000) for the item condition.<br><br/>
+<br><br/>
+In item results, this is only returned when the seller listed the<br/>
+item with a condition ID.<br/>
+Some categories don&rsquo;t support or require condition IDs<br/>
+(e.g., most Antiques categories don&rsquo;t). Also, until spring 2011,<br/>
+some GTC listings may define the item condition in item specifics<br/>
+instead, so no ID is returned.<br><br/>
+<br><br/>
+If you specify Condition in itemFilter, the response returns items<br/>
+with the correctly matching condition(s), even if conditionId is<br/>
+not returned. For example, if you specify a value of &ldquo;New"<br/>
+or "1000&rdquo; in the item filter, the response only returns new items.</p>
+
+<p>type : NSNumber, wrapper for primitive int</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_Condition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delimiter" title="delimiter"></a>
+	<h3 class="subsubtitle method-title">delimiter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(public property)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *delimiter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>(public property)</p>
+
+<p>type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_Condition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 leansoft. All rights reserved. (Last updated: 2013-03-29)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

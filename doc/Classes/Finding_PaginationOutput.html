@@ -1,0 +1,688 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Finding_PaginationOutput Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PicoEBayFindingClient </a></h1>
+				<a id="developerHome" href="../index.html">leansoft</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Finding_PaginationOutput Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/any">&nbsp;&nbsp;&nbsp;&nbsp;any</option>
+	
+	<option value="//api/name/delimiter">&nbsp;&nbsp;&nbsp;&nbsp;delimiter</option>
+	
+	<option value="//api/name/entriesPerPage">&nbsp;&nbsp;&nbsp;&nbsp;entriesPerPage</option>
+	
+	<option value="//api/name/pageNumber">&nbsp;&nbsp;&nbsp;&nbsp;pageNumber</option>
+	
+	<option value="//api/name/totalEntries">&nbsp;&nbsp;&nbsp;&nbsp;totalEntries</option>
+	
+	<option value="//api/name/totalPages">&nbsp;&nbsp;&nbsp;&nbsp;totalPages</option>
+	
+	
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/any">any</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delimiter">delimiter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entriesPerPage">entriesPerPage</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pageNumber">pageNumber</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/totalEntries">totalEntries</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/totalPages">totalPages</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Finding_PaginationOutput Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Finding_PaginationOutput Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">PicoBindable</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Finding_PaginationOutput.h<br />Finding_PaginationOutput.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Shows the pagination data for the item search. Child elements include the<br/>
+page number returned, the maximum entries returned per page, the total number<br/>
+of pages that can be returned, and the total number of items that match the<br/>
+search criteria.</p>
+
+<p>@ingroup FindingServicePortType</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pageNumber">&nbsp;&nbsp;pageNumber</a></code>
+		<span class="tooltip"><p>The subset of item data returned in the current response. Search results<br/>
+are divided into sets, or &ldquo;pages,&rdquo; of item data. The number of pages is<br/>
+equal to the total number of items matching the search criteria divided<br/>
+by the value specified for <a href="#//api/name/entriesPerPage">entriesPerPage</a> in the request. The response<br/>
+for a request contains one &ldquo;page&rdquo; of item data.<br/>
+<br> <br><br/>
+This returned value indicates the page number of item data returned (a<br/>
+subset of the complete result set). If this field contains 1, the<br/>
+response contains the first page of item data (the default). If the value<br/>
+returned in <a href="#//api/name/totalEntries">totalEntries</a> is less than the value for <a href="#//api/name/entriesPerPage">entriesPerPage</a>,<br/>
+pageNumber returns 1 and the response contains the entire result set.<br/>
+<br> <br><br/>
+The value of pageNumber is normally equal to the value input for<br/>
+paginationInput.pageNumber. However, if the number input for pageNumber<br/>
+is greater than the total possible pages of output, eBay returns the last<br/>
+page of item data in the result set, and the value for pageNumber is set<br/>
+to the respective (last) page number.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entriesPerPage">&nbsp;&nbsp;entriesPerPage</a></code>
+		<span class="tooltip"><p>The maximum number of items that can be returned in the response. This<br/>
+number is always equal to the value input for<br/>
+paginationInput.entriesPerPage.<br/>
+<br> <br><br/>
+The end of the result set has been reached if the number specified for<br/>
+entriesPerPage is greater than the number of items found on the specified<br/>
+<a href="#//api/name/pageNumber">pageNumber</a>. In this case, there will be fewer items returned than the<br/>
+number specified in entriesPerPage. This can be determined by comparing<br/>
+the entriesPerPage value with the value returned in the count attribute<br/>
+for the searchResult field.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/totalPages">&nbsp;&nbsp;totalPages</a></code>
+		<span class="tooltip"><p>The total number of pages of data that could be returned by repeated<br/>
+search requests. Note that if you modify the value of<br/>
+inputPagination.<a href="#//api/name/entriesPerPage">entriesPerPage</a> in a request, the value output for<br/>
+totalPages will change. A value of &ldquo;0&rdquo; is returned if eBay does not find<br/>
+<a href="#//api/name/any">any</a> items that match the search criteria.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/totalEntries">&nbsp;&nbsp;totalEntries</a></code>
+		<span class="tooltip"><p>The total number of items found that match the search criteria in your<br/>
+request. Depending on the input value for <a href="#//api/name/entriesPerPage">entriesPerPage</a>, the response<br/>
+might include only a portion (a page) of the entire result set. A value<br/>
+of &ldquo;0&rdquo; is returned if eBay does not find <a href="#//api/name/any">any</a> items that match the search<br/>
+criteria.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delimiter">&nbsp;&nbsp;delimiter</a></code>
+		<span class="tooltip"><p>(public property)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/any">&nbsp;&nbsp;any</a></code>
+		<span class="tooltip"><p>(public property)</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/any" title="any"></a>
+	<h3 class="subsubtitle method-title">any</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(public property)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *any</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>(public property)</p>
+
+<p>entry type : PicoAnyElement, wrapper for primitive anyelement</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_PaginationOutput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delimiter" title="delimiter"></a>
+	<h3 class="subsubtitle method-title">delimiter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>(public property)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *delimiter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>(public property)</p>
+
+<p>type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_PaginationOutput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entriesPerPage" title="entriesPerPage"></a>
+	<h3 class="subsubtitle method-title">entriesPerPage</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The maximum number of items that can be returned in the response. This<br/>
+number is always equal to the value input for<br/>
+paginationInput.entriesPerPage.<br/>
+<br> <br><br/>
+The end of the result set has been reached if the number specified for<br/>
+entriesPerPage is greater than the number of items found on the specified<br/>
+<a href="#//api/name/pageNumber">pageNumber</a>. In this case, there will be fewer items returned than the<br/>
+number specified in entriesPerPage. This can be determined by comparing<br/>
+the entriesPerPage value with the value returned in the count attribute<br/>
+for the searchResult field.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *entriesPerPage</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The maximum number of items that can be returned in the response. This<br/>
+number is always equal to the value input for<br/>
+paginationInput.entriesPerPage.<br/>
+<br> <br><br/>
+The end of the result set has been reached if the number specified for<br/>
+entriesPerPage is greater than the number of items found on the specified<br/>
+<a href="#//api/name/pageNumber">pageNumber</a>. In this case, there will be fewer items returned than the<br/>
+number specified in entriesPerPage. This can be determined by comparing<br/>
+the entriesPerPage value with the value returned in the count attribute<br/>
+for the searchResult field.</p>
+
+<p>type : NSNumber, wrapper for primitive int</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_PaginationOutput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pageNumber" title="pageNumber"></a>
+	<h3 class="subsubtitle method-title">pageNumber</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The subset of item data returned in the current response. Search results<br/>
+are divided into sets, or &ldquo;pages,&rdquo; of item data. The number of pages is<br/>
+equal to the total number of items matching the search criteria divided<br/>
+by the value specified for <a href="#//api/name/entriesPerPage">entriesPerPage</a> in the request. The response<br/>
+for a request contains one &ldquo;page&rdquo; of item data.<br/>
+<br> <br><br/>
+This returned value indicates the page number of item data returned (a<br/>
+subset of the complete result set). If this field contains 1, the<br/>
+response contains the first page of item data (the default). If the value<br/>
+returned in <a href="#//api/name/totalEntries">totalEntries</a> is less than the value for <a href="#//api/name/entriesPerPage">entriesPerPage</a>,<br/>
+pageNumber returns 1 and the response contains the entire result set.<br/>
+<br> <br><br/>
+The value of pageNumber is normally equal to the value input for<br/>
+paginationInput.pageNumber. However, if the number input for pageNumber<br/>
+is greater than the total possible pages of output, eBay returns the last<br/>
+page of item data in the result set, and the value for pageNumber is set<br/>
+to the respective (last) page number.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *pageNumber</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The subset of item data returned in the current response. Search results<br/>
+are divided into sets, or &ldquo;pages,&rdquo; of item data. The number of pages is<br/>
+equal to the total number of items matching the search criteria divided<br/>
+by the value specified for <a href="#//api/name/entriesPerPage">entriesPerPage</a> in the request. The response<br/>
+for a request contains one &ldquo;page&rdquo; of item data.<br/>
+<br> <br><br/>
+This returned value indicates the page number of item data returned (a<br/>
+subset of the complete result set). If this field contains 1, the<br/>
+response contains the first page of item data (the default). If the value<br/>
+returned in <a href="#//api/name/totalEntries">totalEntries</a> is less than the value for <a href="#//api/name/entriesPerPage">entriesPerPage</a>,<br/>
+pageNumber returns 1 and the response contains the entire result set.<br/>
+<br> <br><br/>
+The value of pageNumber is normally equal to the value input for<br/>
+paginationInput.pageNumber. However, if the number input for pageNumber<br/>
+is greater than the total possible pages of output, eBay returns the last<br/>
+page of item data in the result set, and the value for pageNumber is set<br/>
+to the respective (last) page number.</p>
+
+<p>type : NSNumber, wrapper for primitive int</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_PaginationOutput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/totalEntries" title="totalEntries"></a>
+	<h3 class="subsubtitle method-title">totalEntries</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The total number of items found that match the search criteria in your<br/>
+request. Depending on the input value for <a href="#//api/name/entriesPerPage">entriesPerPage</a>, the response<br/>
+might include only a portion (a page) of the entire result set. A value<br/>
+of &ldquo;0&rdquo; is returned if eBay does not find <a href="#//api/name/any">any</a> items that match the search<br/>
+criteria.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *totalEntries</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The total number of items found that match the search criteria in your<br/>
+request. Depending on the input value for <a href="#//api/name/entriesPerPage">entriesPerPage</a>, the response<br/>
+might include only a portion (a page) of the entire result set. A value<br/>
+of &ldquo;0&rdquo; is returned if eBay does not find <a href="#//api/name/any">any</a> items that match the search<br/>
+criteria.</p>
+
+<p>type : NSNumber, wrapper for primitive int</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_PaginationOutput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/totalPages" title="totalPages"></a>
+	<h3 class="subsubtitle method-title">totalPages</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The total number of pages of data that could be returned by repeated<br/>
+search requests. Note that if you modify the value of<br/>
+inputPagination.<a href="#//api/name/entriesPerPage">entriesPerPage</a> in a request, the value output for<br/>
+totalPages will change. A value of &ldquo;0&rdquo; is returned if eBay does not find<br/>
+<a href="#//api/name/any">any</a> items that match the search criteria.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *totalPages</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The total number of pages of data that could be returned by repeated<br/>
+search requests. Note that if you modify the value of<br/>
+inputPagination.<a href="#//api/name/entriesPerPage">entriesPerPage</a> in a request, the value output for<br/>
+totalPages will change. A value of &ldquo;0&rdquo; is returned if eBay does not find<br/>
+<a href="#//api/name/any">any</a> items that match the search criteria.</p>
+
+<p>type : NSNumber, wrapper for primitive int</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_PaginationOutput.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 leansoft. All rights reserved. (Last updated: 2013-03-29)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

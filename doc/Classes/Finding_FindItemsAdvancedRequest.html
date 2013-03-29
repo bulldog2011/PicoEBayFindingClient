@@ -1,0 +1,898 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>Finding_FindItemsAdvancedRequest Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">PicoEBayFindingClient </a></h1>
+				<a id="developerHome" href="../index.html">leansoft</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">Finding_FindItemsAdvancedRequest Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/aspectFilter">&nbsp;&nbsp;&nbsp;&nbsp;aspectFilter</option>
+	
+	<option value="//api/name/categoryId">&nbsp;&nbsp;&nbsp;&nbsp;categoryId</option>
+	
+	<option value="//api/name/descriptionSearch">&nbsp;&nbsp;&nbsp;&nbsp;descriptionSearch</option>
+	
+	<option value="//api/name/domainFilter">&nbsp;&nbsp;&nbsp;&nbsp;domainFilter</option>
+	
+	<option value="//api/name/itemFilter">&nbsp;&nbsp;&nbsp;&nbsp;itemFilter</option>
+	
+	<option value="//api/name/keywords">&nbsp;&nbsp;&nbsp;&nbsp;keywords</option>
+	
+	<option value="//api/name/outputSelector">&nbsp;&nbsp;&nbsp;&nbsp;outputSelector</option>
+	
+	
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/aspectFilter">aspectFilter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/categoryId">categoryId</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/descriptionSearch">descriptionSearch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/domainFilter">domainFilter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/itemFilter">itemFilter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keywords">keywords</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/outputSelector">outputSelector</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="Finding_FindItemsAdvancedRequest Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">Finding_FindItemsAdvancedRequest Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/Finding_BaseFindingServiceRequest.html">Finding_BaseFindingServiceRequest</a> : <a href="../Classes/Finding_BestMatchFindingServiceRequest.html">Finding_BestMatchFindingServiceRequest</a> : <a href="../Classes/Finding_BaseServiceRequest.html">Finding_BaseServiceRequest</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">Finding_FindItemsAdvancedRequest.h<br />Finding_FindItemsAdvancedRequest.m</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Request container for the findItemsAdvanced call.</p>
+
+<p>@ingroup FindingServicePortType</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keywords">&nbsp;&nbsp;keywords</a></code>
+		<span class="tooltip"><p>Specify one or more words to use in a search query for finding items<br/>
+on eBay. By default, queries search item titles only. When running<br/>
+queries, it is best to include complete keywords values&ndash;eBay checks<br/>
+words in context with each other. If you are using a URL request and<br/>
+your keyword query consists of multiple words, use &ldquo;%20&rdquo; to separate<br/>
+the words. For example, use &ldquo;Harry%20Potter&rdquo; to search for items<br/>
+containing those words in any order. Queries aren&rsquo;t case-sensitive,<br/>
+so it doesn&rsquo;t matter whether you use uppercase or lowercase letters.<br/>
+<br><br><br/>
+You can incorporate wildcards in a multi-word search. For example,<br/>
+&ldquo;ap<em>%20ip</em>&rdquo; returns results for &ldquo;apple ipod&rdquo; among other matches. The<br/>
+words &ldquo;and&rdquo; and &ldquo;or&rdquo; are treated like any other word (and not their<br/>
+logical connotation). Only use &ldquo;and&rdquo;, &ldquo;or&rdquo;, or &ldquo;the&rdquo; if you are<br/>
+searching for listings containing those specific words.<br/>
+<br><br><br/>
+<b class="con">findItemsAdvanced</b> requires that you<br/>
+specify <b class="con">keywords</b>  and/or a &lt;b<br/>
+class=&ldquo;con&rdquo;>categoryId</b> in the request. The exception to<br/>
+this rule is when the Seller item filter is used. The Seller item<br/>
+filter can be used without specifying either <b class="con"><br/>
+keywords</b> or <b class="con">categoryId</b> to<br/>
+retrieve all active items for the specified seller.<br/>
+<br><br></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/categoryId">&nbsp;&nbsp;categoryId</a></code>
+		<span class="tooltip"><p>Specifies the category from which you want to retrieve item listings.<br/>
+This field can be repeated to include multiple categories. Up to<br/>
+three (3) categories can be specified.<br/>
+<br><br><br/>
+If a specified category ID doesn&rsquo;t match an existing category for the<br/>
+site, eBay returns an invalid-category error message. To determine<br/>
+valid categories, use the Shopping API &lt;b<br/>
+class=&ldquo;con&rdquo;>GetCategoryInfo</b> call.<br/>
+<br><br><br/>
+<b class="con">findItemsAdvanced</b> requires that you<br/>
+specify <b class="con">keywords</b>  and/or a &lt;b<br/>
+class=&ldquo;con&rdquo;>categoryId</b> in the request. The exception to<br/>
+this rule is when the Seller item filter is used. The Seller item<br/>
+filter can be used without specifying either <b class="con"><br/>
+keywords</b> or <b class="con">categoryId</b> to<br/>
+retrieve all active items for the specified seller.<br/>
+<br><br><br/>
+Category searches are not supported on the eBay Italy site (global ID<br/>
+EBAY-IT) at this time.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/itemFilter">&nbsp;&nbsp;itemFilter</a></code>
+		<span class="tooltip"><p>Reduce the number of items returned by a find request using item<br/>
+filters. Use <b class="con">itemFilter</b> to specify<br/>
+name/value pairs. You can include multiple item filters in a single<br/>
+request.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/aspectFilter">&nbsp;&nbsp;aspectFilter</a></code>
+		<span class="tooltip"><p>Aspect filters refine (limit) the number of items returned by a find<br/>
+request. Obtain input values for aspectFilter fields from an<br/>
+aspectHistogramContainer returned in the response of a previous<br/>
+query.<br/>
+<br><br><br/>
+By issuing a series of find queries, you can continually refine the<br/>
+items returned in your responses. Do this by repeating a query using<br/>
+the aspect values returned in one response as the input values to<br/>
+your next query.<br/>
+<br><br><br/>
+For example, the aspectHistogramContainer in a response on Men's<br/>
+Shoes could contain an aspect of Size, along with &ldquo;aspect values&rdquo; for<br/>
+the different sizes currently available in Men&rsquo;s Shoes. By populating<br/>
+aspectFilter fields with the values returned in an<br/>
+aspectHistogramContainer, you can refine the item results returned by<br/>
+your new query.<br/>
+<br/><br/><br/>
+<span class="tablenote"><br/>
+<strong>Note:</strong> If a call that specifies an<br/>
+<strong>outputSelector</strong> value of<br/>
+<strong>AspectHistogram</strong> returns<br/>
+<strong>aspectHistogramContainer.domainName</strong>, this is a sign<br/>
+that aspect histogram data might not be returned if you also specify an<br/>
+<strong>aspectFilter</strong> in the next call. To ensure that<br/>
+aspect histogram data is returned for the next call, add a <strong><br/>
+domainFilter</strong> to the call as well.<br/>
+</span></p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/outputSelector">&nbsp;&nbsp;outputSelector</a></code>
+		<span class="tooltip"><p>Defines what data to return, in addition to the default set of data,<br/>
+in a response.<br/>
+<br><br><br/>
+If you don&rsquo;t specify this field, eBay returns a default set of item<br/>
+fields. Use outputSelector to include more information in the<br/>
+response. The additional data is grouped into discrete nodes. You can<br/>
+specify multiple nodes by including this field multiple times, as<br/>
+needed, in the request.<br/>
+<br><br><br/>
+If you specify this field, the additional fields returned can affect<br/>
+the call&rsquo;s response time (performance), including in the case with<br/>
+feedback data.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/descriptionSearch">&nbsp;&nbsp;descriptionSearch</a></code>
+		<span class="tooltip"><p>Specifies whether your keyword query should be applied to item<br/>
+descriptions in addition to titles. Searching the text of item<br/>
+descriptions incurs a performance hit (it can take longer than<br/>
+searches that don&rsquo;t include description searches). If true, the text<br/>
+of the item&rsquo;s description and subtitles will be included in the<br/>
+search. If false, only item titles are included in keyword searches.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/domainFilter">&nbsp;&nbsp;domainFilter</a></code>
+		<span class="tooltip"><p>Restricts results to items listed within the specified domain.<br/>
+Domains are a buy-side grouping of items. such as shoes or digital<br/>
+cameras. A domain can span multiple eBay categories.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/aspectFilter" title="aspectFilter"></a>
+	<h3 class="subsubtitle method-title">aspectFilter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Aspect filters refine (limit) the number of items returned by a find<br/>
+request. Obtain input values for aspectFilter fields from an<br/>
+aspectHistogramContainer returned in the response of a previous<br/>
+query.<br/>
+<br><br><br/>
+By issuing a series of find queries, you can continually refine the<br/>
+items returned in your responses. Do this by repeating a query using<br/>
+the aspect values returned in one response as the input values to<br/>
+your next query.<br/>
+<br><br><br/>
+For example, the aspectHistogramContainer in a response on Men's<br/>
+Shoes could contain an aspect of Size, along with &ldquo;aspect values&rdquo; for<br/>
+the different sizes currently available in Men&rsquo;s Shoes. By populating<br/>
+aspectFilter fields with the values returned in an<br/>
+aspectHistogramContainer, you can refine the item results returned by<br/>
+your new query.<br/>
+<br/><br/><br/>
+<span class="tablenote"><br/>
+<strong>Note:</strong> If a call that specifies an<br/>
+<strong>outputSelector</strong> value of<br/>
+<strong>AspectHistogram</strong> returns<br/>
+<strong>aspectHistogramContainer.domainName</strong>, this is a sign<br/>
+that aspect histogram data might not be returned if you also specify an<br/>
+<strong>aspectFilter</strong> in the next call. To ensure that<br/>
+aspect histogram data is returned for the next call, add a <strong><br/>
+domainFilter</strong> to the call as well.<br/>
+</span></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *aspectFilter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Aspect filters refine (limit) the number of items returned by a find<br/>
+request. Obtain input values for aspectFilter fields from an<br/>
+aspectHistogramContainer returned in the response of a previous<br/>
+query.<br/>
+<br><br><br/>
+By issuing a series of find queries, you can continually refine the<br/>
+items returned in your responses. Do this by repeating a query using<br/>
+the aspect values returned in one response as the input values to<br/>
+your next query.<br/>
+<br><br><br/>
+For example, the aspectHistogramContainer in a response on Men's<br/>
+Shoes could contain an aspect of Size, along with &ldquo;aspect values&rdquo; for<br/>
+the different sizes currently available in Men&rsquo;s Shoes. By populating<br/>
+aspectFilter fields with the values returned in an<br/>
+aspectHistogramContainer, you can refine the item results returned by<br/>
+your new query.<br/>
+<br/><br/><br/>
+<span class="tablenote"><br/>
+<strong>Note:</strong> If a call that specifies an<br/>
+<strong>outputSelector</strong> value of<br/>
+<strong>AspectHistogram</strong> returns<br/>
+<strong>aspectHistogramContainer.domainName</strong>, this is a sign<br/>
+that aspect histogram data might not be returned if you also specify an<br/>
+<strong>aspectFilter</strong> in the next call. To ensure that<br/>
+aspect histogram data is returned for the next call, add a <strong><br/>
+domainFilter</strong> to the call as well.<br/>
+</span></p>
+
+<p>entry type : class <a href="../Classes/Finding_AspectFilter.html">Finding_AspectFilter</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_FindItemsAdvancedRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/categoryId" title="categoryId"></a>
+	<h3 class="subsubtitle method-title">categoryId</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies the category from which you want to retrieve item listings.<br/>
+This field can be repeated to include multiple categories. Up to<br/>
+three (3) categories can be specified.<br/>
+<br><br><br/>
+If a specified category ID doesn&rsquo;t match an existing category for the<br/>
+site, eBay returns an invalid-category error message. To determine<br/>
+valid categories, use the Shopping API &lt;b<br/>
+class=&ldquo;con&rdquo;>GetCategoryInfo</b> call.<br/>
+<br><br><br/>
+<b class="con">findItemsAdvanced</b> requires that you<br/>
+specify <b class="con">keywords</b>  and/or a &lt;b<br/>
+class=&ldquo;con&rdquo;>categoryId</b> in the request. The exception to<br/>
+this rule is when the Seller item filter is used. The Seller item<br/>
+filter can be used without specifying either <b class="con"><br/>
+keywords</b> or <b class="con">categoryId</b> to<br/>
+retrieve all active items for the specified seller.<br/>
+<br><br><br/>
+Category searches are not supported on the eBay Italy site (global ID<br/>
+EBAY-IT) at this time.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *categoryId</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifies the category from which you want to retrieve item listings.<br/>
+This field can be repeated to include multiple categories. Up to<br/>
+three (3) categories can be specified.<br/>
+<br><br><br/>
+If a specified category ID doesn&rsquo;t match an existing category for the<br/>
+site, eBay returns an invalid-category error message. To determine<br/>
+valid categories, use the Shopping API &lt;b<br/>
+class=&ldquo;con&rdquo;>GetCategoryInfo</b> call.<br/>
+<br><br><br/>
+<b class="con">findItemsAdvanced</b> requires that you<br/>
+specify <b class="con">keywords</b>  and/or a &lt;b<br/>
+class=&ldquo;con&rdquo;>categoryId</b> in the request. The exception to<br/>
+this rule is when the Seller item filter is used. The Seller item<br/>
+filter can be used without specifying either <b class="con"><br/>
+keywords</b> or <b class="con">categoryId</b> to<br/>
+retrieve all active items for the specified seller.<br/>
+<br><br><br/>
+Category searches are not supported on the eBay Italy site (global ID<br/>
+EBAY-IT) at this time.</p>
+
+<p>entry type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_FindItemsAdvancedRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/descriptionSearch" title="descriptionSearch"></a>
+	<h3 class="subsubtitle method-title">descriptionSearch</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies whether your keyword query should be applied to item<br/>
+descriptions in addition to titles. Searching the text of item<br/>
+descriptions incurs a performance hit (it can take longer than<br/>
+searches that don&rsquo;t include description searches). If true, the text<br/>
+of the item&rsquo;s description and subtitles will be included in the<br/>
+search. If false, only item titles are included in keyword searches.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *descriptionSearch</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifies whether your keyword query should be applied to item<br/>
+descriptions in addition to titles. Searching the text of item<br/>
+descriptions incurs a performance hit (it can take longer than<br/>
+searches that don&rsquo;t include description searches). If true, the text<br/>
+of the item&rsquo;s description and subtitles will be included in the<br/>
+search. If false, only item titles are included in keyword searches.</p>
+
+<p>type : NSNumber, wrapper for primitive bool</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_FindItemsAdvancedRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/domainFilter" title="domainFilter"></a>
+	<h3 class="subsubtitle method-title">domainFilter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Restricts results to items listed within the specified domain.<br/>
+Domains are a buy-side grouping of items. such as shoes or digital<br/>
+cameras. A domain can span multiple eBay categories.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *domainFilter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Restricts results to items listed within the specified domain.<br/>
+Domains are a buy-side grouping of items. such as shoes or digital<br/>
+cameras. A domain can span multiple eBay categories.</p>
+
+<p>entry type : class <a href="../Classes/Finding_DomainFilter.html">Finding_DomainFilter</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_FindItemsAdvancedRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/itemFilter" title="itemFilter"></a>
+	<h3 class="subsubtitle method-title">itemFilter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Reduce the number of items returned by a find request using item<br/>
+filters. Use <b class="con">itemFilter</b> to specify<br/>
+name/value pairs. You can include multiple item filters in a single<br/>
+request.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *itemFilter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Reduce the number of items returned by a find request using item<br/>
+filters. Use <b class="con">itemFilter</b> to specify<br/>
+name/value pairs. You can include multiple item filters in a single<br/>
+request.</p>
+
+<p>entry type : class <a href="../Classes/Finding_ItemFilter.html">Finding_ItemFilter</a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_FindItemsAdvancedRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/keywords" title="keywords"></a>
+	<h3 class="subsubtitle method-title">keywords</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specify one or more words to use in a search query for finding items<br/>
+on eBay. By default, queries search item titles only. When running<br/>
+queries, it is best to include complete keywords values&ndash;eBay checks<br/>
+words in context with each other. If you are using a URL request and<br/>
+your keyword query consists of multiple words, use &ldquo;%20&rdquo; to separate<br/>
+the words. For example, use &ldquo;Harry%20Potter&rdquo; to search for items<br/>
+containing those words in any order. Queries aren&rsquo;t case-sensitive,<br/>
+so it doesn&rsquo;t matter whether you use uppercase or lowercase letters.<br/>
+<br><br><br/>
+You can incorporate wildcards in a multi-word search. For example,<br/>
+&ldquo;ap<em>%20ip</em>&rdquo; returns results for &ldquo;apple ipod&rdquo; among other matches. The<br/>
+words &ldquo;and&rdquo; and &ldquo;or&rdquo; are treated like any other word (and not their<br/>
+logical connotation). Only use &ldquo;and&rdquo;, &ldquo;or&rdquo;, or &ldquo;the&rdquo; if you are<br/>
+searching for listings containing those specific words.<br/>
+<br><br><br/>
+<b class="con">findItemsAdvanced</b> requires that you<br/>
+specify <b class="con">keywords</b>  and/or a &lt;b<br/>
+class=&ldquo;con&rdquo;>categoryId</b> in the request. The exception to<br/>
+this rule is when the Seller item filter is used. The Seller item<br/>
+filter can be used without specifying either <b class="con"><br/>
+keywords</b> or <b class="con">categoryId</b> to<br/>
+retrieve all active items for the specified seller.<br/>
+<br><br></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *keywords</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specify one or more words to use in a search query for finding items<br/>
+on eBay. By default, queries search item titles only. When running<br/>
+queries, it is best to include complete keywords values&ndash;eBay checks<br/>
+words in context with each other. If you are using a URL request and<br/>
+your keyword query consists of multiple words, use &ldquo;%20&rdquo; to separate<br/>
+the words. For example, use &ldquo;Harry%20Potter&rdquo; to search for items<br/>
+containing those words in any order. Queries aren&rsquo;t case-sensitive,<br/>
+so it doesn&rsquo;t matter whether you use uppercase or lowercase letters.<br/>
+<br><br><br/>
+You can incorporate wildcards in a multi-word search. For example,<br/>
+&ldquo;ap<em>%20ip</em>&rdquo; returns results for &ldquo;apple ipod&rdquo; among other matches. The<br/>
+words &ldquo;and&rdquo; and &ldquo;or&rdquo; are treated like any other word (and not their<br/>
+logical connotation). Only use &ldquo;and&rdquo;, &ldquo;or&rdquo;, or &ldquo;the&rdquo; if you are<br/>
+searching for listings containing those specific words.<br/>
+<br><br><br/>
+<b class="con">findItemsAdvanced</b> requires that you<br/>
+specify <b class="con">keywords</b>  and/or a &lt;b<br/>
+class=&ldquo;con&rdquo;>categoryId</b> in the request. The exception to<br/>
+this rule is when the Seller item filter is used. The Seller item<br/>
+filter can be used without specifying either <b class="con"><br/>
+keywords</b> or <b class="con">categoryId</b> to<br/>
+retrieve all active items for the specified seller.<br/>
+<br><br></p>
+
+<p>type : NSString, wrapper for primitive string</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_FindItemsAdvancedRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/outputSelector" title="outputSelector"></a>
+	<h3 class="subsubtitle method-title">outputSelector</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defines what data to return, in addition to the default set of data,<br/>
+in a response.<br/>
+<br><br><br/>
+If you don&rsquo;t specify this field, eBay returns a default set of item<br/>
+fields. Use outputSelector to include more information in the<br/>
+response. The additional data is grouped into discrete nodes. You can<br/>
+specify multiple nodes by including this field multiple times, as<br/>
+needed, in the request.<br/>
+<br><br><br/>
+If you specify this field, the additional fields returned can affect<br/>
+the call&rsquo;s response time (performance), including in the case with<br/>
+feedback data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *outputSelector</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Defines what data to return, in addition to the default set of data,<br/>
+in a response.<br/>
+<br><br><br/>
+If you don&rsquo;t specify this field, eBay returns a default set of item<br/>
+fields. Use outputSelector to include more information in the<br/>
+response. The additional data is grouped into discrete nodes. You can<br/>
+specify multiple nodes by including this field multiple times, as<br/>
+needed, in the request.<br/>
+<br><br><br/>
+If you specify this field, the additional fields returned can affect<br/>
+the call&rsquo;s response time (performance), including in the case with<br/>
+feedback data.</p>
+
+<p>entry type : string constant in Finding_OutputSelectorType.h</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">Finding_FindItemsAdvancedRequest.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 leansoft. All rights reserved. (Last updated: 2013-03-29)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
