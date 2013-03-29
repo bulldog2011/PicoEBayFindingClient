@@ -7,7 +7,7 @@ Pico Objective-C Client for the [eBay Finding API](https://www.x.com/developers/
 ## Note
 1. This is only the proxy part of the PicoEBayFindingClient, you need to integrate with [Pico Runtime](https://github.com/bulldog2011/pico) before you can use this proxy, please follow instructions on Pico github site to add the Pico runtime library and the PicoEBayFindingClient in your iOS app, you may also start with the sample mentioned in Reference Sample section below. 
 2. You need to fill in `eBayAppId` in `EBayFindingServiceClient` before your app can invoke eBay Finding service.
-3. Besides proxy code, this site also hosts the appledoc for the PicoEBayFindingClient.
+3. Besides proxy code, this site also hosts the [appledoc for the PicoEBayFindingClient](http://bulldog2011.github.com/PicoEBayFindingClient/).
 
 
 ##Example Usage
